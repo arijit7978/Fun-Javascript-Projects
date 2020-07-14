@@ -58,6 +58,12 @@ function keydowner (event) {
     direction = "down"
     down.play();
   }
+  else if (event.keyCode == 32) {
+    score = 0;
+    snake = [{x:10*box, y:10*box}];
+    game = setInterval(draw, 200);
+
+  }
 }
 
 // cheack collision function
@@ -118,6 +124,9 @@ function draw(){
         ctx.fillStyle = "white";
         ctx.font = "60px Calibri";
         ctx.fillText("GAME OVER", 5*box, 11*box);
+        ctx.fillStyle = "green";
+        ctx.font = "30px Calibri";
+        ctx.fillText("Space to Restart", 6.5*box, 12.5*box);
     }
     else {
     snake.unshift(pos);
@@ -126,5 +135,5 @@ function draw(){
 
 // call draw function every 100 ms
 
-let game = setInterval(draw,200);
+let game = setInterval(draw, 200);
 document.addEventListener("keydown", keydowner);

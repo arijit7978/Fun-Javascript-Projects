@@ -1,0 +1,45 @@
+
+/*----------- Global Styles ---------- */
+#slider {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 800px;
+  height: 500px;
+  margin-left: -400px;
+  margin-top: -250px;
+}
+
+/*----------- Slide Style ---------- */
+.slide_image {
+  width: 800px;
+  height: 500px;
+}
+
+.left_btn {
+  position: absolute;
+  top: 50%;
+  left: 1%;
+  width: 15px;
+  height: 10px;
+  border-radius: 2px;
+  background-image: url('../images/arr_left.png');
+  background-size: 100% 100%;
+  border: none;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.right_btn {
+  position: absolute;
+  top: 50%;
+  right: 1%;
+  width: 15px;
+  height: 10px;
+  border: none;
+  border-radius: 2px;
+  background-image: url('../images/arr_right.png');
+  background-size: 100% 100%;
+  opacity: 0.5;
+  cursor: pointer;
+}

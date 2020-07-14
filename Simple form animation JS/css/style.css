@@ -1,0 +1,29 @@
+
+/*----------- Global Styles ---------- */
+body {
+  background-color: green
+}
+
+/*----------- Box Style ---------- */
+.frm {
+  margin:400px 50px;
+  text-align:center;
+  align:center;
+}
+
+.f_input {
+  text-align: center;
+  background-image: url("../Images/user-icon.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+}
+
+.f_input, .btn{
+  border-radius: 3px;
+  padding:0;
+  margin:0;
+  border:0px;
+  height:20px;
+}
